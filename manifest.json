@@ -1,0 +1,22 @@
+{
+  "lang": "vi-VN",
+  "background_color": "#ffffff",
+  "name": "Yến Việt Nam",
+  "short_name": "Yen Viet Nam",
+  "display": "standalone",
+  "theme_color ": "#ffffff",
+  "icons": [
+    {
+      "src": "template/images/launcher/128x128.jpg",
+      "sizes": "128x128",
+      "type": "image/jpeg",
+      "density": 3.0
+    },
+    {
+      "src": "template/images/launcher/192x192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "density": 4.0
+    }
+  ]
+}

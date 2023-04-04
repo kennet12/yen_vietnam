@@ -1,0 +1,2453 @@
+@CHARSET "ISO-8859-1";
+/*
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,400,300');
+*/
+body {
+	/*font-family: 'Roboto';*/
+}
+
+a {
+	cursor: pointer;
+}
+
+select {
+	cursor: pointer;
+}
+
+input[type="email"],input[type="number"],input[type="password"],input[type="tel"],input[type="text"],input[type="url"],select,textarea {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius: 0px !important;
+	box-shadow: none !important;
+}
+
+input.error, select.error, textarea.error, span.error {
+	border: 1px solid #DF1F26 !important;
+}
+
+.input-icon {
+	position: relative;
+}
+
+.input-icon > i {
+	color: #ccc;
+	display: block;
+	position: absolute;
+	margin: 10px 4px 4px 10px;
+	z-index: 3;
+	width: 14px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.input-icon > .form-control {
+	padding-left: 32px;
+}
+
+.btn {
+	border-radius: 0px;
+}
+
+.btn-danger {
+	border-color: #E4241D;
+	background-color: #E4241D;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.required, .text-required, .text-color-red {
+	color: #E4241D !important;
+}
+
+.text-color-grey {
+	color: #999;
+}
+
+.hide, .hidden, .display-none {
+	display: none;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.highlight {
+	color: #fff;
+	display: inline;
+	padding: 0 5px;
+	background-color: #ff6c3a;
+}
+
+.header {
+	border-bottom: 0px solid #E5E5E5;
+}
+
+.header .header-nav {
+	background-color: #f5f5f5;
+}
+
+.header .header-nav .social-list {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.header .header-nav .social-list > li {
+	float: left;
+}
+
+.header .header-nav .social-list > li > a {
+	color: #666;
+	padding: 5px 10px;
+	display: block;
+	text-decoration: none;
+}
+
+.header .header-nav .social-list > li > a:hover {
+	background-color: #E5E5E5;
+}
+
+.header .header-nav .social-list > li:last-child {
+}
+
+.header .header-nav .social-list > li > a:hover .fa-facebook {
+	color: #3b5998;
+}
+
+.header .header-nav .social-list > li > a:hover .fa-google-plus {
+	color: #ca3523;
+}
+
+.header .header-nav .social-list > li > a:hover .fa-twitter {
+	color: #34b5ec;
+}
+
+.header .header-nav .social-list > li > a:hover .fa-youtube-play {
+	color: #ca3523;
+}
+
+.header .header-nav .contact-list {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.header .header-nav .contact-list > li {
+	float: left;
+}
+
+.header .header-nav .contact-list > li > a {
+	color: #666;
+	padding: 5px 10px;
+	display: block;
+	text-decoration: none;
+}
+
+.header .header-nav .contact-list > li > a:hover {
+	background-color: #E5E5E5;
+}
+
+.header .header-nav .contact-list > li {
+	border-right: 1px solid #ddd;
+}
+
+.header .header-nav .contact-list > li:last-child {
+	border-right: none;
+}
+
+.header .header-nav .contact-list > a {
+	color: inherit;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.header .header-logo {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.header .header-logo img {
+}
+
+.header .header-menu {
+}
+
+.header .header-menu .navbar {
+	background-color: transparent;
+	border: none;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: 0px;
+}
+
+.header .header-menu .navbar .navbar-nav > li {
+}
+
+.header .header-menu .navbar .navbar-nav > li:first-child {
+}
+
+.header .header-menu .navbar .navbar-nav > li > a {
+	background-color: #fff;
+	color: #333;
+}
+
+.header .header-menu .navbar .navbar-nav > li.active > a,
+.header .header-menu .navbar .navbar-nav > li.active:hover > a {
+	background-color: #E4241D;
+	color: #fff;
+}
+
+.header .header-menu .navbar .navbar-nav > li:hover > a {
+	background-color: #F5F5F5;
+}
+
+.pr-10 {
+	padding-right: 10px;
+}
+
+.breadcrumbs {
+	background-color: #F5F5F5;
+}
+
+.breadcrumbs .breadcrumb {
+	margin-bottom: 0px;
+	color: #666;
+}
+
+.breadcrumbs .breadcrumb a {
+	color: #666;
+	text-decoration: none;
+}
+
+.breadcrumbs .breadcrumb a:hover {
+	color: red;
+}
+
+.container .breadcrumb {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.slider {
+	/*background-image: url('../images/wizban/1.jpg');*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider .flexslider {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border: none;
+}
+
+.slider .flexslider .slides, .slider .flexslider .slides > li {
+	height: 100%;
+}
+
+.slider .flexslider .slide-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.slide-wrap {
+	position: relative;
+}
+
+.error404 .slide-wrap {
+	background-image: radial-gradient(circle at 48% 108%, #607d8b, #243238);
+	height: 300px;
+	display: block;
+	color: #fff;
+}
+
+.vietnam-visa-requirements .slide-wrap {
+	background-image: url("../images/wizban/vietnam-visa-requirements.jpg?cr=vs2017");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	min-height: 350px;
+	display: block;
+	color: #fff;
+}
+
+.how-it-works .slide-wrap {
+	background-image: url("../images/wizban/how-it-works.jpg?cr=vs2017");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 350px;
+	display: block;
+	color: #fff;
+}
+
+.visa-process-wrap {
+	margin-top: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-top: 3px solid #E4241D;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #333;
+}
+
+.visa-process-wrap .cluster-heading {
+}
+
+.visa-process-wrap .pr-section-bg .pr-block .pr-blockL {
+	color: #E4241D;
+}
+
+.img-pr {
+	display: inline-block;
+}
+
+.visa-process-wrap .img-pr {
+	border: 2px solid #FFF;
+}
+
+.ul-processing {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.ul-processing li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.ul-processing > li:before {
+	color: #39B54A;
+	font-family: FontAwesome;
+	content: "\f058";
+	margin-right: 15px;
+	display: inline-block;
+}
+
+.hw-opt-body {
+	background-color: #F8F8F8;
+	padding: 20px;
+}
+
+.apply-visa .slide-wrap {
+	background-image: url("../images/wizban/apply-visa.jpg?cr=vs2017");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	min-height: 350px;
+	display: block;
+	color: #fff;
+}
+
+.apply-visa .visa-form {
+}
+
+.apply-visa .visa-form:before {
+	content: "";
+	width: 100%;
+	height: 500px;
+	display: block;
+	position: absolute;
+	background: url("../images/wizban/visa-global.jpg?cr=vs2017") no-repeat;
+	background-size: 100% auto;
+	z-index: -1;
+}
+
+.apply-visa .visa-form .panel {
+	background-color: #FFFFFF;
+	webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+}
+
+.vietnam-visa-fees {
+}
+
+.vietnam-visa-fees .slide-wrap {
+	background-image: url("../images/wizban/vietnam-visa-fees.jpg?cr=vs2017");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	min-height: 350px;
+	display: block;
+	color: #fff;
+}
+
+.vietnam-visa-fees .cluster-fee-calculator {
+	background-image: url("../images/wizban/vietnam-visa-fees.jpg?cr=vs2017");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: block;
+}
+
+.vietnam-visa-fees .cluster-fee-calculator .cluster-heading {
+	padding-bottom: 20px;
+}
+
+.vietnam-visa-fees .cluster-fee-calculator .input-group-bordered {
+}
+
+.vietnam-visa-fees .cluster-fee-calculator .input-group-bordered .form-control,
+.vietnam-visa-fees .cluster-fee-calculator .input-group-bordered .btn {
+}
+
+.faqs .slide-wrap {
+	background-image: url("../images/wizban/faq.jpg?cr=vs2017");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 350px;
+	display: block;
+	color: #fff;
+}
+
+.services .slide-wrap {
+	background-image: url("../images/wizban/services.jpg?cr=vs2017");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 350px;
+	display: block;
+	color: #fff;
+}
+
+.vietnam-embassies .slide-wrap {
+	background-image: url("../images/wizban/embassy-bg.jpg?cr=vs2017");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	min-height: 350px;
+	display: block;
+	color: #fff;
+}
+
+.vietnam-visa-guide .slide-wrap {
+	background-image: url("../images/wizban/embassy-bg.jpg?cr=vs2017");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	min-height: 350px;
+	display: block;
+	color: #fff;
+}
+
+.heading-bar {
+	background-color: #F5F5F5;
+	padding-top: 18px;
+	padding-bottom: 20px;
+}
+
+.heading-bar .heading-text {
+	font-size: 20px;
+	margin: 0px;
+}
+
+.widget-apply {
+	margin-bottom: 30px;
+}
+
+.widget-apply .widget-thumbnail {
+	position: relative;
+}
+
+.widget-apply .widget-thumbnail .icon {
+	position: absolute;
+	left: 45%;
+	bottom: -20px;
+	background-color: #E32726;
+	color: #fff;
+	font-size: 24px;
+	width: 40px;
+	height: 40px;
+	padding-top: 4px;
+	text-align: center;
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+.widget-apply .widget-body {
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	padding: 20px;
+}
+
+.widget-apply .f-box .f-box-logo {
+	background-color: transparent;
+	padding-top: 8px;
+}
+
+.widget-apply .f-box .f-box-logo .fa {
+	color: #E32726;
+	font-size: 22px;
+}
+
+.widget-apply .widget-button {
+	padding-top: 15px;
+}
+
+.widget-faq {
+	background-color: #F5F5F5;
+	margin-bottom: 30px;
+}
+
+.widget-faq .widget-heading {
+	background-color: #CBCFD6;
+	padding: 10px 10px;
+}
+
+.widget-faq .widget-body {
+	padding: 10px;
+}
+
+.widget-faq .widget-body ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.widget-faq .widget-body ul a {
+}
+
+.widget-faq .widget-footer {
+	padding: 10px;
+}
+
+.widget-service {
+	margin-bottom: 30px;
+}
+
+.widget-service .widget-heading {
+	background-color: #333;
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	padding: 10px 10px;
+	margin: 0px;
+}
+
+.widget-service .widget-body {
+	border: 1px solid #ddd;
+	border-top: none;
+}
+
+.widget-service .widget-body ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.widget-service .widget-body ul li {
+}
+
+.widget-service .widget-body ul li:last-child {
+}
+
+.widget-service .widget-body ul a {
+	width: 100%;
+	color: #444;
+	padding: 8px 15px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.widget-service .widget-body ul a:hover {
+	background-color: #F5F5F5;
+}
+
+.widget-service .f-box .f-box-logo {
+	background-color: transparent;
+	padding-top: 8px;
+	width: inherit !important;
+	height: inherit !important;
+}
+
+.widget-service .f-box .f-box-logo .fa {
+	color: #E32726;
+	font-size: 22px;
+}
+
+.widget-service .f-box .f-box-logo-disabled .fa {
+	color: #ddd;
+}
+
+.widget-service .widget-body ul a .help-block {
+	color: inherit !important;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+.widget-help {
+	background-color: #FFF;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.widget-help .box-title {
+	margin-bottom: 15px;
+}
+
+.widget-help .contact-details .contact-phone {
+	color: #e44049;
+	font-size: 20px;
+}
+
+.downloads .slide-wrap {
+	background-image: url("../images/wizban/visa-form.jpg?cr=vs2017");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 350px;
+	display: block;
+	color: #fff;
+}
+
+.slide-wrap .heading-wrap {
+	position: absolute;
+	left: 0px;
+	top: 40%;
+	width: 50%;
+	padding: 20px;
+	text-align: right;
+	background: rgba(0,0,0,0.2);
+	color: #fff;
+	z-index: 3;
+}
+
+.slide-wrap .heading-wrap .heading-content {
+	max-width: 400px;
+	text-align: left;
+	display: inline-block;
+}
+
+.slide-wrap .heading-wrap .heading-content .heading {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.slide-wrap .slide-content {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
+	background: -o-linear-gradient(right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
+	background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
+}
+
+.slide-wrap .slide-content .slide-text {
+	margin-top: 100px;
+}
+
+.slide-wrap .slide-content .slide-text h1 {
+	color: #fff;
+	font-size: 32px;
+	/*text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);*/
+}
+
+.slide-wrap .slide-content .slide-text h1:before {
+	background-color: #E4241D;
+	content: '';
+	width: 90px;
+	height: 4px;
+	margin: 0 0 40px;
+	display: block;
+}
+
+.slide-wrap .slide-content .slide-text h3 {
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.4em;
+	/*text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);*/
+}
+
+.slide-wrap .slide-content .slide-text h4 {
+	/*text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);*/
+}
+
+.slide-wrap .slide-content .slide-button {
+	margin-top: 30px;
+}
+
+.slide-wrap .slide-content .slide-button .btn {
+	border: none;
+	padding: 8px 15px;
+}
+
+.slide-wrap .slide-content .slide-button .btn-learn-more {
+	margin-left: 10px;
+}
+
+.slide-wrap .slide-content .slide-text h1 span {
+	font-size: 56px;
+	letter-spacing: 3px;
+}
+
+.slide-wrap .slide-content .search-widget {
+	background: rgba(0,0,0, .7);
+	color: #fff;
+	padding: 15px 20px;
+	margin-top: 100px;
+}
+
+.slide-wrap .slide-content .search-widget .widget-heading {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.slide-wrap .slide-content .search-widget .widget-label {
+	font-weight: normal;
+}
+
+.slide-wrap .slide-content .search-widget .widget-control {
+	border: none;
+	border-radius: 0px;
+}
+
+.page-content {
+}
+
+.page-title {
+	font-size: 24px;
+	margin-top: 0px;
+}
+
+.footer-social {
+	background-color: #F8F8F8;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.footer-social .social-list {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.footer-social .social-list li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.footer-social .social-list li a {
+	text-align: center;
+	color: rgba(0,0,0,.87);
+	text-decoration: none;
+	display: inline-block;
+}
+
+.footer-social .social-list li a .fa {
+	font-size: 42px;
+}
+
+.footer-social .social-list > li > a .fa-facebook-square {
+	color: #3b5998;
+}
+
+.footer-social .social-list > li > a .fa-google-plus-square {
+	color: #ca3523;
+}
+
+.footer-social .social-list > li > a .fa-twitter {
+	color: #34b5ec;
+}
+
+.footer-social .social-list > li > a .fa-youtube-play {
+	color: #ea2d0d;
+}
+
+.footer-social .social-list li a .title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.footer-social .social-list li a:hover .title {
+	color: #039be5;
+}
+
+.footer-social .social-list li a .desc {
+	font-size: 12px;
+}
+
+.footer {
+	background-color: #37424B;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.footer .footer-links {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer .footer-links .title {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.footer .footer-links .links {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.footer .footer-links .links .link-item {
+	color: #cfd8dc;
+	padding-bottom: 5px;
+}
+
+.footer .footer-links .links .link-item a {
+	color: #cfd8dc;
+}
+
+.footer .copy-right {
+	background-color: #455a64;
+	color: #cfd8dc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.footer .copy-right .payment-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer .copy-right .payment-list-item {
+	margin-left: 10px;
+	display: inline-block;
+	width: 49px;
+	height: 30px;
+}
+
+.footer .copy-right .svg.icon-payment-paypal:before {
+	background-image: url("../images/icon-payment-paypal.svg?cr=vs2017");
+	background-repeat: no-repeat;
+}
+
+.footer .copy-right .svg.icon-payment-visa:before {
+	background-image: url("../images/icon-payment-visa.svg?cr=vs2017");
+	background-repeat: no-repeat;
+}
+
+.footer .copy-right .svg.icon-payment-mastercard:before {
+	background-image: url("../images/icon-payment-mastercard.svg?cr=vs2017");
+	background-repeat: no-repeat;
+}
+
+.footer .copy-right .svg.icon-payment-discover:before {
+	background-image: url("../images/icon-payment-discover.svg?cr=vs2017");
+	background-repeat: no-repeat;
+}
+
+.footer .copy-right .svg.icon-payment-american-express:before {
+	background-image: url("../images/icon-payment-american-express.svg?cr=vs2017");
+	background-repeat: no-repeat;
+}
+
+.footer .copy-right .svg:before {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+}
+
+.heading-div {
+	width: 100px;
+	height: 1px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	display: inline-block;
+	border-bottom: 1px solid #E4241D;
+}
+
+.bg-grey {
+	background-color: #F5F5F5;
+}
+
+.cluster {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.cluster .cluster-heading {
+	padding-bottom: 30px;
+}
+
+.cluster .cluster-heading .heading-div {
+	width: 150px;
+	height: 1px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	display: inline-block;
+	border-bottom: 1px solid #E4241D;
+}
+
+.cluster .cluster-body {
+}
+
+.cluster-about {
+	background: url("../images/bg-home-hero.jpg?cr=vs2017") no-repeat scroll center center transparent;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.cluster-about .bg-about {
+	background: rgba(255, 255, 255, 0.7);
+	padding: 30px;
+}
+
+.cluster-about .thumbnail {
+	border: none;
+	border-radius: 0px;
+}
+
+.cluster-whyus {
+	background: url("../images/bg-why.jpg?cr=vs2017") no-repeat scroll center center transparent;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.cluster-whyus i {
+	width: 60px;
+	float: left;
+	background: url("../images/icon-why.png?cr=vs2017") no-repeat scroll 0 0 transparent;
+	height: 100px;
+	margin-top: 5px;
+	padding-top: 0px;
+	margin-left: 0px;
+}
+
+.cluster-whyus .cluster-body .row div:nth-child(3) i {
+	width: 60px;
+	float: left;
+	margin-left: 0px;
+	background-position: -121px 0;
+}
+
+.cluster-whyus .cluster-body .row div:nth-child(4) i {
+	background-position: -61px 0;
+}
+
+.cluster-whyus .cluster-body .row div:nth-child(6) i {
+	width: 60px;
+	float: left;
+	margin-left: 0px;
+	background-position: -181px 0;
+}
+
+.cluster-whyus h3 {
+	margin-top: 5px;
+}
+
+.pr-section-bg {
+}
+
+.pr-section-bg .pr-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.pr-section-bg .pr-block .pr-blockL {
+    color: #D4D4D4;
+    float: left;
+    font-size: 72px;
+    line-height: 56px;
+    margin-right: 10px;
+}
+
+.pr-section-bg .pr-block .pr-blockR {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.pr-section-bg .pr-block .pr-blockR p {
+    font-size: 16px;
+}
+
+.f-box {
+}
+
+.f-box .f-box-logo {
+	width: 40px;
+	height: 40px;
+	background: #E4241D;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 11px;
+}
+
+.f-box .f-box-logo i {
+	font-size: 18px;
+	color: #fff;
+}
+
+.f-box .f-box-address {
+	width: 30px;
+	height: 30px;
+	background: #E4241D;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.f-box .f-box-address i {
+	font-size: 14px;
+	color: #fff;
+}
+
+.contact .media .media-body h4 {
+	margin-top: 5px;
+}
+
+.apply-visa .nav-progress {
+	margin-bottom: 40px;
+}
+
+.apply-visa .step-progress ul {
+	width: 100%;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: table;
+	overflow: hidden;
+}
+
+.apply-visa .step-progress ul li {
+	background: none repeat scroll 0 0 #DDDDDD;
+	width: 20%;
+	height: 4px;
+	text-align: center;
+	display: table-cell;
+}
+
+.apply-visa .step-progress ul li.active {
+	background: none repeat scroll 0 0 #E4241D;
+}
+
+.apply-visa .step-label ul {
+	width: 100%;
+	list-style: none;
+	margin: 0px;
+	padding: 10px 0px;
+	display: table;
+}
+
+.apply-visa .step-label ul li {
+	width: 20%;
+	font-weight: normal;
+	text-align: center;
+	display: table-cell;
+}
+
+.apply-visa .step-label ul li:FIRST-CHILD {
+	border-radius: 10px 0 0 10px;
+}
+
+.apply-visa .step-label ul li:LAST-CHILD {
+	border-radius: 0 10px 10px 0;
+}
+
+.apply-visa .form-apply input[type="text"].error, input.error, select.error {
+	border: 1px solid #DF1F26 !important;
+}
+
+.apply-visa .form-apply div.error {
+	border: 1px dotted #DF1F26;
+}
+
+.apply-visa .form-apply .car-select {
+	background-color: #F8F8F8;
+	border: 1px solid #DDDDDD;
+	padding: 10px;
+}
+
+.processing-note {
+	background-color: #ECEFF1;
+	margin-top: 12px;
+	padding: 15px;
+	font-size: 12px;
+	position: relative;
+}
+
+.processing-note.note-success {
+	background-color: #dff0d8;
+}
+
+.processing-note:before {
+	position: absolute;
+	display: block;
+	top: -12px;
+	left: 20px;
+	content: " ";
+	box-sizing: border-box;
+	z-index: 2;
+	border-color: transparent transparent rgb(236, 239, 241);
+	border-style: solid;
+	border-width: 6px;
+}
+
+.processing-note.note-success:before {
+	border-color: transparent transparent rgb(223, 240, 216);
+}
+
+.apply-visa .form-apply .panel-options {
+}
+
+.apply-visa .form-apply .panel-options .div {
+	padding-top: 15px;
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #CCC;
+	display: block;
+}
+
+.apply-visa .form-apply .time-board {
+	background-color: #546E7A;
+	color: #FFFFFF;
+	padding: 10px 15px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+
+.apply-visa .form-apply .panel-fees {
+}
+
+.apply-visa .form-apply .panel-fees .panel-heading {
+    background-color: #516F97;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 12px 15px;
+    border-radius: 0px;
+}
+
+.apply-visa .form-apply .panel-fees .panel-body {
+	background-color: #FFFFFF;
+	padding: 0px;
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	position: relative;
+}
+
+.apply-visa .form-apply .panel-fees ul {
+	list-style: none;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+}
+
+.apply-visa .form-apply .panel-fees li {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 10px;
+}
+
+.apply-visa .form-apply .panel-fees li:last-child {
+    border-bottom: none;
+}
+
+.apply-visa .form-apply .panel-fees .service-fee-item {
+    padding-bottom: 15px;
+}
+
+.apply-visa .form-apply .panel-fees .service-fee-item:last-child {
+    padding-bottom: 0px;
+}
+
+.apply-visa .form-apply .panel-fees span, .panel-fees table.extra_service {
+    float: right;
+}
+
+.apply-visa .form-apply .panel-fees table.extra_service td {
+    padding: 0px 0px 10px 0px;
+}
+
+.apply-visa .form-apply .panel-fees .total {
+	border: none;
+	margin-top: -1px;
+    border-top: 1px solid #6997B3;
+}
+
+.apply-visa .form-apply .panel-fees .price-block {
+	position: relative;
+	top: 0;
+	float: right;
+	margin-right: -20px;
+}
+
+.apply-visa .form-apply .panel-fees .subtotal-price {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.apply-visa .form-apply .panel-fees .price-block .price {
+	background: #E4241D;
+	height: 27px;
+	color: #fff;
+	padding: 4px 20px 5px 10px;
+	z-index: 2;
+	position: relative;
+}
+
+.apply-visa .form-apply .panel-fees .price-block .price-corner-right {
+	position: absolute;
+	display: block;
+	border-color: transparent;
+	border-style: solid;
+	top: 18px;
+	right: -9px;
+	border-left-color: #DDDDDD;
+	content: " ";
+	border-width: 9px;
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+.apply-visa .form-apply .panel-fees .price-block .price-corner-left {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: -9px;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+.apply-visa .form-apply .panel-fees .price-block .price-corner-left svg polygon {
+	fill: #E4241D;
+}
+
+.apply-visa .form-apply .panel-fees .price {
+    color: #005286;
+    font-weight: bold;
+}
+
+.apply-visa .form-apply .panel-fees label span {
+    float: none !important;
+}
+
+.apply-visa .form-apply .panel-fees .passport_holder_t {
+	color: #005286;
+	font-weight: bold;
+}
+
+.apply-visa .form-apply .panel-fees .yoursavepercent_t {
+    float: none;
+    color: #005286;
+    font-weight: bold;
+}
+
+.apply-visa .form-apply .panel-fees .vipsavepercent_t {
+    float: none;
+    color: #005286;
+    font-weight: bold;
+}
+
+.apply-visa .form-apply .panel-fees .total span {
+    color: #DC2222;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.apply-visa .form-apply .panel-fees .payment-methods {
+	background-color: #ECEFF1;
+	text-align: center;
+	padding: 12px 20px;
+	margin-top: 10px;
+}
+
+.apply-visa .form-apply .promotion-input {
+}
+
+.apply-visa .form-login .nav-tabs > li > a {
+	color: rgb(51, 51, 51);
+	border-radius: 0px;
+}
+
+.apply-visa .form-login .tab-content {
+	box-shadow: rgba(0, 0, 0, 0.2) 2px 0px 4px;
+	padding: 30px 15px 20px;
+	background: rgb(255, 255, 255);
+	border-width: 0px 1px 1px;
+	border-style: solid solid solid;
+	border-color: rgb(221, 221, 221) rgb(221, 221, 221) rgb(221, 221, 221);
+	border-image: initial;
+	border-top: 0px;
+}
+
+.apply-visa .form-apply .group {
+	margin-bottom: 15px;
+}
+
+.apply-visa .form-apply .group .group-heading {
+	background-color: #516F97;
+	color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 12px 15px;
+}
+
+.apply-visa .form-apply .group .group-heading.heading-danger {
+	background-color: #E4241D !important;
+}
+
+.apply-visa .form-apply .group .group-content {
+	padding: 15px;
+	background-color: #FFFFFF;
+	border: 1px solid #ddd;
+	border-top: none;
+}
+
+.apply-visa .form-apply .group .group-content .form-control {
+	padding: 4px;
+	font-size: 12px;
+}
+
+.apply-visa .form-apply .group .group-content .passport-detail {
+	margin-left: -2px;
+	margin-right: -2px;
+}
+
+.apply-visa .form-apply .group .group-content .passport-detail *[class*="col-"] {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.apply-visa .form-apply .group .group-content .passport-detail *[class*="col-"] .row {
+	margin-left: -2px;
+	margin-right: -2px;
+}
+
+.apply-visa .form-apply .group .group-content .passport-detail .form-label {
+	font-size: 12px;
+}
+
+.apply-visa .form-apply .group .group-content .passport-detail .form-control {
+	margin-bottom: 15px;
+}
+
+.apply-visa .form-apply .group .group-content .passport-detail select {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.terms_conditions_confirm {
+	text-decoration: underline;
+}
+
+.form-apply .table-summary {
+    border-collapse: collapse;
+    margin: 0 0 18px 0;
+}
+
+.form-apply .table-summary th,
+.form-apply .table-summary td {
+    padding: 7px 10px;
+    border: 1px solid #CFD8DC;
+}
+
+.form-apply .table-summary th {
+    background: #CFD8DC;
+}
+
+.form-apply .table-summary td {
+    font-weight: normal;
+}
+
+.form-apply .table-summary .total {
+	font-weight: bold;
+    color: red;
+}
+
+.stamping-fee .heading {
+	margin-top: 0px;
+	text-transform: uppercase;
+	color: red;
+}
+
+.stamping-fee ul {
+	list-style-type: square;
+    margin: 0;
+    padding-left: 15px;
+    color: #999;
+}
+
+.stamping-fee ul li {
+}
+
+.stamping-fee ul li span {
+    color: #464646;
+}
+
+.pricing-table th {
+	background-color: #F5F5F5;
+	border: 1px solid #DDDDDD;
+	color: #333;
+	font-weight: normal;
+	vertical-align: middle !important;
+}
+
+.pricing-table td {
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	color: #333;
+	vertical-align: middle !important;
+}
+
+.pricing-table tr.business td {
+	background-color: #F8F8F8 !important;
+}
+
+.fee-definition {
+	background-color: #FFFCE1;
+	padding: 15px;
+}
+
+.fee-definition .heading {
+	font-style: italic;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+.fee-definition ul {
+	list-style-type: decimal;
+	font-style: italic;
+}
+
+.fee-definition ul li {
+	padding-bottom: 15px;
+}
+
+.services .thumbnail {
+	padding: 0px;
+	border: none;
+	border-radius: 0px;
+}
+
+.services .thumbnail img {
+}
+
+.services .thumbnail .caption {
+	padding: 0px 0px 15px;
+}
+
+.services .thumbnail .caption .title a {
+	color: black !important;
+}
+
+.services .thumbnail .caption .title a:hover {
+	color: red !important;
+}
+
+.faqs-listing {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.faqs-listing > ul {
+	padding-left: 0;
+	webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+}
+
+.faqs-listing > ul > li {
+	list-style: none;
+	border-bottom: 1px solid #E5E5E5;
+	position: relative;
+}
+
+.faqs-listing > ul > li:last-child {
+	border-bottom: none;
+}
+
+.faqs-listing > ul > li > h2 {
+	margin: 0px;
+}
+
+.faqs-listing > ul > li > h2 > a {
+	color: #E4241D;
+	/*padding: 15px 15px 15px 50px;*/
+	width: 100%;
+	padding: 15px;
+	display: table;
+	font-size: 16px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.faqs-listing > ul > li > h2 > a:before {
+	/*color: #E4241D;
+	content: '-';
+	font-size: 24px;
+	left: 22px;
+	position: absolute;*/
+}
+
+.faqs-listing .faq-num {
+	color: #E4241D;
+	font-size: 18px;
+	width: 36px;
+	padding-right: 15px;
+	text-align: right;
+	display: table-cell;
+}
+
+.faqs-listing > ul > li > h2 > a.collapsed:hover {
+	color: #E4241D !important;
+}
+
+.faqs-listing > ul > li > h2 > a.collapsed:hover:before {
+	color: #E4241D;
+}
+
+.faqs-listing > ul > li > h2 > a.collapsed {
+	color: inherit !important;
+}
+
+.faqs-listing > ul > li > h2 > a.collapsed:before {
+	/*color: #E4241D;
+	content: '+';
+	font-size: 24px;
+	left: 20px;
+	position: absolute;*/
+}
+
+.faqs-listing > ul > li .collapse, .faqs-listing > ul > li .collapsing {
+	padding: 15px 15px 15px 50px;
+}
+
+.cluster-download {
+	background-color: #ECEFF1;
+}
+
+.download-thumbnail {
+	background-color: #FFF;
+	padding: 30px 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.download-thumbnail .download-icon-cover {
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	background-color: #E32726;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.download-thumbnail .download-icon .fa {
+	font-size: 38px;
+	color: #FFFFFF;
+}
+
+.download-thumbnail .download-heading {
+}
+
+.download-thumbnail .download-body {
+	padding-bottom: 15px;
+}
+
+.download-thumbnail .download-buttons {
+}
+
+.news-items {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.news-items .news-item {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.news-items .news-item:first-child {
+	padding-top: 0px;
+}
+
+.news-items .news-item-wrap {
+	display: table;
+}
+
+.news-items .news-item-wrap .news-item-left {
+	display: table-cell;
+	vertical-align: top;
+	/*padding-right: 20px;*/
+}
+
+.news-items .news-item-wrap .news-item-left img {
+	/*max-width: 200px;*/
+}
+
+.news-items .news-item-wrap .news-item-body {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.news-items .news-item-wrap .news-item-body .news-item-heading {
+    margin-top: 0px;
+}
+
+.news-items .news-item-wrap .news-item-body .news-item-heading a {
+    color: inherit !important;
+}
+
+.news-items .news-item-wrap .news-item-body .news-item-heading a:hover {
+    color: red !important;
+}
+
+.news-items .news-description {
+	color: #666;
+	padding-bottom: 30px;
+}
+
+.news-items .news-detail {
+}
+
+.news-detail img {
+	max-width: 100% !important;
+}
+
+.vietnam-embassies .nations {
+	margin: 20px 0px;
+}
+.vietnam-embassies .nations .embassies {
+	border-top: 1px solid #E9E9E9;
+    float: left;
+    padding: 15px 0;
+    width: 100%;
+}
+.vietnam-embassies .nations .embassies .number {
+    border-right: 1px solid #DDDDDD;
+    font-size: 32px;
+    color: #999;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 50px;
+}
+.vietnam-embassies .nations .embassies ul {
+    margin: 0px;
+    padding: 0px;
+}
+.vietnam-embassies .nations .embassies ul li {
+    display: block;
+    margin-top: 5px;
+}
+.vietnam-embassies .nations .embassies ul img {
+    width: 16px;
+    height: 16px;
+    padding-right: 4px;
+}
+.vietnam-embassies .nations .embassies ul a {
+	color: inherit !important;
+}
+.vietnam-embassies .nations .embassies ul a:hover {
+	color: red !important;
+}
+.vietnam-embassies .embassy-l {
+}
+.vietnam-embassies .embassy-l h1.title {
+    color: #888888;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.vietnam-embassies .embassy-l p.message {
+    color: #005286;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 108px;
+}
+.vietnam-embassies .embassy-l p.error {
+    color:#FF0000;
+    padding-left: 108px;
+}
+.vietnam-embassies .embassy-r {
+}
+.vietnam-embassies .embassy-r .embassy-scroll {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border-top: 1px solid #DDDDDD;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 0 15px;
+    position: relative;
+    top: 10px;
+    height: 500px;
+}
+.vietnam-embassies .embassy-r .line-embassy {
+    float: left;
+    margin-top: 22px;
+    width: 100%;
+}
+.vietnam-embassies .embassy-r .bg-number {
+    background-color: #E32726;
+    color: #fff;
+    display: inline;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-left: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 18px;
+    height: 18px;
+}
+.vietnam-embassies .embassy-r ul.list-embassy {
+    display: inline;
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 15px;
+}
+.vietnam-embassies .embassy-r ul.list-embassy li {
+    line-height: 18px;
+}
+.vietnam-embassies .embassy-r ul.list-embassy li > a {
+    color: inherit !important;
+}
+.vietnam-embassies .embassy-r ul.list-embassy li > a:hover {
+    color: red !important;
+}
+
+.vietnam-visa-guide .nations {
+	margin: 20px 0px;
+}
+.vietnam-visa-guide .nations .embassies {
+	border-top: 1px solid #E9E9E9;
+    float: left;
+    padding: 15px 0;
+    width: 100%;
+}
+.vietnam-visa-guide .nations .embassies .number {
+    border-right: 1px solid #DDDDDD;
+    font-size: 32px;
+    color: #999;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 50px;
+}
+.vietnam-visa-guide .nations .embassies ul {
+    margin: 0px;
+    padding: 0px;
+}
+.vietnam-visa-guide .nations .embassies ul li {
+    display: block;
+    margin-top: 5px;
+}
+.vietnam-visa-guide .nations .embassies ul img {
+    width: 16px;
+    height: 16px;
+    padding-right: 4px;
+}
+.vietnam-visa-guide .nations .embassies ul a {
+	color: inherit !important;
+}
+.vietnam-visa-guide .nations .embassies ul a:hover {
+	color: red !important;
+}
+.vietnam-visa-guide .embassy-l {
+}
+.vietnam-visa-guide .embassy-l h1.title {
+    color: #888888;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.vietnam-visa-guide .embassy-l p.message {
+    color: #005286;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 108px;
+}
+.vietnam-visa-guide .embassy-l p.error {
+    color:#FF0000;
+    padding-left: 108px;
+}
+.vietnam-visa-guide .embassy-r {
+}
+.vietnam-visa-guide .embassy-r .embassy-scroll {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border-top: 1px solid #DDDDDD;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 0 15px;
+    position: relative;
+    top: 10px;
+    height: 500px;
+}
+.vietnam-visa-guide .embassy-r .line-embassy {
+    float: left;
+    margin-top: 22px;
+    width: 100%;
+}
+.vietnam-visa-guide .embassy-r .bg-number {
+    background-color: #E32726;
+    color: #fff;
+    display: inline;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-left: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 18px;
+    height: 18px;
+}
+.vietnam-visa-guide .embassy-r ul.list-embassy {
+    display: inline;
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 15px;
+}
+.vietnam-visa-guide .embassy-r ul.list-embassy li {
+    line-height: 18px;
+}
+.vietnam-visa-guide .embassy-r ul.list-embassy li > a {
+    color: inherit !important;
+}
+.vietnam-visa-guide .embassy-r ul.list-embassy li > a:hover {
+    color: red !important;
+}
+
+#map {
+	width: 100%;
+	height: 350px;
+	display: block;
+}
+
+.modal-content {
+	border: none;
+	border-radius: 0px;
+}
+
+.modal-error .modal-header {
+	background-color: #E32726;
+}
+
+.modal-error .modal-header {
+	color: #FFFFFF;
+	border: none !important;
+}
+
+.modal-info .modal-header {
+	background-color: #428BCA;
+}
+
+.modal-info .modal-header {
+	color: #FFFFFF;
+	border: none !important;
+}
+
+.modal-warning .modal-header {
+	background-color: #F0AD4E;
+}
+
+.modal-warning .modal-header {
+	color: #FFFFFF;
+	border: none !important;
+}
+
+.modal-error .close {
+	color: #FFFFFF !important;
+	opacity: 1 !important;
+	text-shadow: none !important;
+}
+
+.modal-error .modal-header-success {
+	background-color: #5CB85C !important;
+}
+
+.visa-info-requirement {
+	background-color: #F8F8F8;
+}
+
+.visa-info-requirement .col-sm-2,
+.visa-info-requirement .col-xs-3 {
+	padding-right: 0px;
+	z-index: 1;
+}
+
+.visa-info-requirement .col-sm-10,
+.visa-info-requirement .col-xs-9 {
+	padding-left: 0px;
+}
+
+.visa-info-requirement .tabs-left {
+	padding-top: 0px;
+}
+
+.visa-info-requirement .tab-content {
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	padding: 20px;
+	margin-left: -1px;
+}
+
+.visa-info-requirement .tab-content .btn-apply {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.tabs-left > li {
+	margin-bottom: 0px;
+}
+
+.tabs-left > li > a {
+	color: #555;
+	background-color: #FFFFFF !important;
+	border-left: 3px solid #CCCCCC;
+	border: 1px solid #DDDDDD;
+	padding: 20px 15px;
+	margin-bottom: -1px;
+}
+
+.tabs-left > li > a:hover {
+	border: 1px solid #DDDDDD;
+}
+
+.tabs-left > li > a:hover {
+	border: 1px solid #DDDDDD;
+}
+
+.tabs-left > li > a, .tabs-left > li > a:focus, .tabs-left > li > a:hover {
+	border-left: 3px solid #CCCCCC;
+	border-radius: 0px;
+}
+
+.tabs-left > li.active > a, .tabs-left > li.active > a:focus, .tabs-left > li.active > a:hover {
+	border-left: 3px solid #E4241D;
+	border-radius: 0px;
+}
+
+.tabs-left > li > a > .title {
+	font-weight: normal;
+}
+
+.tabs-left > li.active > a > .title, .tabs-left > li.active > a:focus > .title, .tabs-left > li.active > a:hover > .title {
+	font-weight: bold;
+}
+
+.pagination {
+	border-radius: 0px !important;
+}
+
+.pagination > .active > a, .pagination > .active > a:hover {
+	background-color: #666 !important;
+	border-color: #444 !important;
+	color: #fff !important;
+}
+
+.pagination > li > a, .pagination > li > a:hover {
+	color: #666 !important;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+	border-radius: 0px !important;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+	border-radius: 0px !important;
+}
+
+.related-items {
+	margin-top: 30px;
+	border-top: 2px solid #DDD;
+}
+
+.related-items .heading {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.related-items .thumbnail {
+	padding: 0px;
+	border: none;
+	border-radius: 0px;
+}
+
+.related-items .thumbnail img {
+	min-height: 110px;
+}
+
+.related-items .thumbnail .caption {
+	padding: 0px 0px 15px;
+}
+
+.related-items .thumbnail .caption .title {
+	font-size: 14px;
+}
+
+.related-items .thumbnail .caption .title a {
+	color: black !important;
+}
+
+.related-items .thumbnail .caption .title a:hover {
+	color: red !important;
+}
+
+.tip-box {
+	background-color: #fcf8e3;
+	color: #8a6d3b;
+	padding: 15px 15px 15px 40px;
+	position: relative;
+}
+
+.tip-box:before {
+	content: "\f0eb";
+	font-family: FontAwesome;
+	font-size: 24px;
+	margin-left: -24px;
+	position: absolute;
+}
+
+.tip-box .tip-heading {
+	font-weight: bold;
+}
+
+.tip-box .tip-body {
+	font-size: 12px;
+}
+
+.tip-box a {
+	color: inherit !important;
+	text-decoration: underline;
+}
+
+.vs-callout {
+	background-color: #fff;
+	padding: 20px;
+	margin: 20px 0;
+	border: 1px solid #eee;
+	border-left-width: 4px;
+	border-left-color: #ce4844;
+}
+
+.fees-callout-fast-track {
+	background-color: #ED5459;
+	color: #fff;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+}
+
+.fees-callout-car-pickup {
+	background-color: #296db8;
+	color: #fff;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+}
+
+.fees-callout-visa-extension {
+	background-color: #4B659A;
+	color: #fff;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+}
+
+.pricing-table td {
+}
+
+.col-price {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.col-price .price-left {
+	margin-right: 25px;
+}
+
+.price-num {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.price-unit {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-size: 10px;
+}
+
+.price-unit .usd {
+	border-bottom: 1px solid #ddd;
+}
+
+.price-unit .pax {
+}
+
+.tooltip-marker {
+	color: #CFD8DC;
+	cursor: help;
+	text-decoration: none !important;
+}
+
+/* Social bootstrap button */
+.btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:inline-block;}.btn-social :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social.btn-sm{padding-left:38px}.btn-social.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social.btn-xs{padding-left:30px}.btn-social.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social-icon{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:34px;width:34px;padding:0}.btn-social-icon :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social-icon.btn-lg{padding-left:61px}.btn-social-icon.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social-icon.btn-sm{padding-left:38px}.btn-social-icon.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social-icon.btn-xs{padding-left:30px}.btn-social-icon.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social-icon :first-child{border:none;text-align:center;width:100% !important}
+.btn-social-icon.btn-lg{height:45px;width:45px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-sm{height:30px;width:30px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-xs{height:22px;width:22px;padding-left:0;padding-right:0}
+.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{color:#fff;background-color:#30487b;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{background-image:none}
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+.btn-facebook .badge{color:#3b5998;background-color:#fff}
+.btn-google-plus{color:#fff;background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}.btn-google-plus:hover,.btn-google-plus:focus,.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{color:#fff;background-color:#ca3523;border-color:rgba(0,0,0,0.2)}
+.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{background-image:none}
+.btn-google-plus.disabled,.btn-google-plus[disabled],fieldset[disabled] .btn-google-plus,.btn-google-plus.disabled:hover,.btn-google-plus[disabled]:hover,fieldset[disabled] .btn-google-plus:hover,.btn-google-plus.disabled:focus,.btn-google-plus[disabled]:focus,fieldset[disabled] .btn-google-plus:focus,.btn-google-plus.disabled:active,.btn-google-plus[disabled]:active,fieldset[disabled] .btn-google-plus:active,.btn-google-plus.disabled.active,.btn-google-plus[disabled].active,fieldset[disabled] .btn-google-plus.active{background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}
+.btn-google-plus .badge{color:#dd4b39;background-color:#fff}
+/* End Social bootstrap button */
+
+.form-login .switcher {
+	position: relative;
+}
+.form-login .switcher .switch-line {
+	border-left: 1px solid #dddddd;
+	height: 450px;
+	left: 50%;
+	position: absolute;
+	width: 1px;
+	z-index: 0;
+}
+
+.xs-visa-fee {
+}
+
+.xs-visa-fee .item {
+	border: 1px solid #ddd;
+	padding: 30px 15px;
+}
+
+.xs-visa-fee .item .heading {
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.xs-visa-fee .table td {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.xs-visa-fee .item ul {
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 15px;
+}
+
+.xs-visa-fee .item ul li {
+	list-style: none;
+	padding-bottom: 15px;
+}
+
+.xs-visa-fee .item ul li .fa {
+	color: #999;
+	padding-right: 5px;
+}
+
+.owl-carousel {
+	position: relative;
+}
+
+.owl-buttons {
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: calc(50% - 21px);
+	width: 87%;
+}
+
+.owl-nav {
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: calc(50% - 20px);
+	width: 100%;
+}
+
+.owl-next {
+	right: 0px;
+	position: absolute;
+}
+
+.owl-prev {
+	left: 0px;
+	position: absolute;
+}
+
+.owl-dots {
+	display: none;
+}
+
+.tag-cloud {
+	margin-top: 20px;
+}
+
+.tag-cloud ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.tag-cloud ul li {
+	display: inline-block;
+	margin: 0 .3em .3em 0;
+	padding: 0;
+}
+.tag-cloud ul li a {
+	background-color: transparent;
+	border: 1px solid #455a64;
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 1em;
+	color: #cfd8dc;
+	text-decoration: none;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tag-cloud ul li a.tag-header,
+.tag-cloud ul li a:hover {
+	background-color: #455a64;
+	border: 1px solid #455a64;
+	color: #fff;
+}
+
+.tag-post {
+	margin-top: 20px;
+}
+
+.tag-post ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.tag-post ul li {
+	display: inline-block;
+	margin: 0 .3em .3em 0;
+	padding: 0;
+}
+.tag-post ul li a {
+	background-color: #F9F9F9;
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 1em;
+	color: #333;
+	text-decoration: none;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tag-post ul li a.tag-header,
+.tag-post ul li a:hover {
+	background-color: #3498db;
+	color: #fff;
+}
+
+/* Blog */
+
+.blog {
+	background-color: #E5E5E5;
+}
+
+.blog-infinite .post {
+	margin-bottom: 30px;
+}
+
+.post {
+	position: relative;
+}
+
+.post figure img {
+	width: 100%;
+	height: auto;
+}
+
+.blog-infinite .post .details {
+	background: #fff;
+	padding: 20px 20px 10px;
+}
+
+.blog-infinite .post .details img {
+	max-width: 100%;
+}
+
+.blog-infinite .post .entry-title {
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+.blog-infinite .post .entry-title a {
+	color: inherit !important;
+	text-decoration: none;
+}
+
+.blog-infinite .post .entry-title a:hover {
+	color: #e44049;
+}
+
+.blog-infinite .post .excerpt-container {
+	margin-bottom: 20px;
+}
+
+.blog-infinite .post-meta {
+	background: #f5f5f5;
+	padding: 10px 10px 0;
+	font-size: 1em;
+}
+
+.post .entry-date {
+	background: #2d3e52;
+	padding: 7px 15px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
+.post .entry-date .date {
+	margin: 0;
+	font-size: 1.6667em;
+	display: block;
+	font-weight: normal;
+}
+
+.post .entry-date .month {
+	margin: 0;
+	font-size: 0.8333em;
+	font-weight: normal;
+}
+
+.post-meta {
+	font-size: 0.8333em;
+	text-transform: uppercase;
+}
+
+.blog-infinite .post-meta .entry-author {
+	float: left;
+	line-height: 28px;
+	font-size: 0.83333em;
+	margin-bottom: 10px;
+}
+
+.blog-infinite .post-meta .entry-author a.author {
+	color: #e44049;
+	text-decoration: none;
+}
+
+.blog-infinite .post-meta .entry-author i.icon.soap-icon-user {
+	float: left;
+	width: 28px;
+	height: 28px;
+	background: #fff;
+	display: inline-block;
+	font-size: 1.6666em;
+	line-height: 28px;
+	text-align: center;
+	color: #d9d9d9;
+	margin-right: 10px;
+}
+.blog-infinite .post-meta .entry-action {
+	float: right;
+}
+
+.blog-infinite .post-meta .entry-action>* {
+	height: 28px;
+	line-height: 28px;
+	display: inline-block;
+	padding: 0 10px;
+	margin-left: 8px;
+	margin-bottom: 10px;
+	background: #fff;
+	color: #9e9e9e;
+	letter-spacing: 0.04em;
+	font-size: 0.8333em;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.blog-infinite .post-meta .entry-action>* i {
+	color: #d9d9d9;
+}
+
+.blog-infinite .post-meta:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.blog-infinite .post-meta .entry-action a.button:hover {
+	background: #e44049;
+	color: #fff;
+}
+
+.blog-infinite .post-meta .entry-action a.button:hover i {
+	color: #fff;
+}
+
+/* End Blog */
